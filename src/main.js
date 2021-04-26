@@ -1,11 +1,10 @@
-import Vue from 'vue'
-import router from './router/index'
-import resource from 'vue-resource'
-import store from './vuexDate/startValus'
-import Supplier from './Supplier'
-Vue.use(resource)
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+
+Vue.config.productionTip = false;
+
 new Vue({
   router,
-  store,
-  render: h => h(Supplier)
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount('#app');
